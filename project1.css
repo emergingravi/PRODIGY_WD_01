@@ -1,0 +1,148 @@
+body{
+  margin: 5px;
+  background-color:rgb(64, 59, 59);
+  /* transform: translateY(10px); */
+  animation: transitionIn 1s ease-in-out;
+}
+.navigator{
+    background-color: #5366c5;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+.navigator a{
+    float: left;
+    color: rgb(225, 232, 232);
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+.navigator a:hover{
+    background-color: rgb(110, 138, 209);
+    color:white;
+}
+.navigator a.active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 170, 255);
+}
+.navigator .icon{
+    display: none;
+}
+.first{
+  padding: 50px;
+  background-color: #5366c5;
+  background-image: url("https://searchnepal.biz/wp-content/uploads/2019/01/caf5c71e-c806-479c-b7b8-7c644c712631.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+h1{
+  font-family:cursive;
+  padding: 100px;
+  color: hsl(235, 100%, 98%);
+  font-size: 50px;
+}
+h2{
+  text-align: center;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flex-container{
+  display:flex;
+  background: url("https://uploads-ssl.webflow.com/606666aea1b1202a0508dc39/609d7fd4b188480ef4115649_fooding.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-flow: row wrap;
+  padding:50px;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+}
+img{
+  border-radius: 10px;
+}
+
+.cards{
+  font-family: arial;
+  box-sizing: border-box;
+  background-color: #9ea9a4;
+  padding:5px;
+  border-radius: 10px;
+  width: 210px;
+  height: 270px;
+  color: rgb(10, 22, 22);
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  text-align:center;
+  cursor: pointer;
+  transition: all  ease .4s;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.cards:hover {
+  border: 1px solid black;
+  transform:scaleX(1.09);
+  box-shadow: 10px .5px 300px 10px rgb(169, 172, 150);
+}
+#contact{
+  background: #060101;
+  padding: 30px;
+  font-size: large;
+  color: #9ea9a4;
+  align-items: center;
+}
+#contact>h3{
+  padding-bottom: 10px;
+  text-align: center;
+}
+.c3{
+  text-align: center;
+  font-family: Arial;
+  line-height: 1.5;
+  color: #7f7474;
+  font-size: 15px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 600px) {
+    .navigator a:not(:first-child) {display: none;}
+    .navigator a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    .navigator.responsive {position: relative;}
+    .navigator.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navigator.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  @keyframes transitionIn {
+    from{
+        opacity: 0.5;
+        transform: translateY(-90px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0.6;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    color: #060101;
+    transform: translateY(0);
+  }
+}
